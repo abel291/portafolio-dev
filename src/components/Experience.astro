@@ -1,0 +1,29 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCIE = [
+    {
+        date: "Diciembre 2023",
+        title: "Principal Backend Laravel dev",
+        company: "Sublimis",
+        description:
+            "Sublimis es una Organización Médica en Córdoba, Argentina especializada en brindarle los mejores servicios médicos y procedimientos de cirugía plástica.",
+        link: "https://www.sublimis.com/",
+    },
+    {
+        date: "Septiembre 2022",
+        title: "Backend Laravel dev",
+        company: "Hispano Soluciones C.A",
+        description: "Empresa de desarrollo web ubicada en Maturín, Monagas, Venezuela",
+    },
+];
+---
+
+<ol class="relative mt-16">
+    {
+        EXPERIENCIE.map((experiencie) => (
+            <li class="">
+                <ExperienceItem {...experiencie} />
+            </li>
+        ))
+    }
+</ol>
